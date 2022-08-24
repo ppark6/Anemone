@@ -1,0 +1,72 @@
+.animation-container {
+	position: fixed;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .circle {
+        opacity: 1;
+		transform: rotate(0deg) translateX(50px);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        margin-top: -12.5px;
+        margin-left: -12.5px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }
+      
+    #first {
+		background-color: #96ceb4;
+        animation-name: orbit;
+        animation-duration: 4.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+      
+    #second {
+		background-color: #ff6f69;
+        animation-name: orbit;
+        animation-duration: 4.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.15s;
+    }
+      
+    #third {
+		background-color: #4497e3;
+        animation-name: orbit;
+        animation-duration: 4.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.3s;
+    }
+}
+  
+@keyframes orbit {
+    0% {
+		opacity: 1;
+		transform: rotate(0deg) translateX(50px);
+    }
+    30% {
+		opacity: 1;
+		transform: rotate(360deg) translateX(50px);
+    }
+    40% {
+		opacity: 1;
+		transform: rotate(360deg) translateX(50px);
+    }
+    80% {
+		opacity: 1;
+		transform: rotate(-360deg) translateX(50px);
+    }
+    100% {
+		opacity: 1;
+		transform: rotate(-360deg) translateX(50px);
+    }
+}

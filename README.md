@@ -8,3 +8,11 @@
     npm install -g sass
     npm install -g http-server
     ````
+
+1. **Run project.**
+
+    Each project is divided into individual folder. To run a project for development, run following command inside project folder:
+
+    ````
+    http-server .
+    ````
