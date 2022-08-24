@@ -54,7 +54,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: flyRight 3s infinite 0.3s, alterColor 9s step-start infinite -3s;
+  animation: flyRight 3s infinite 0.25s, alterColor 9s step-start infinite -3s;
 }
 .animation-container #square-3 {
   position: fixed;
@@ -65,7 +65,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: stayCenter 3s infinite 0.25s;
+  animation: stayCenter 3s infinite 0.3s;
 }
 
 @keyframes flyLeft {
