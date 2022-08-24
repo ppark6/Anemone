@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
     .circle {
         opacity: 1;
-		transform: rotate(0deg) translateX(50px);
+		transform: rotate(-90deg) translateX(50px);
         position: fixed;
         top: 50%;
         left: 50%;
@@ -51,22 +51,22 @@
 @keyframes orbit {
     0% {
 		opacity: 1;
-		transform: rotate(0deg) translateX(50px);
+		transform: rotate(-90deg) translateX(50px);
     }
     30% {
 		opacity: 1;
-		transform: rotate(360deg) translateX(50px);
+		transform: rotate(270deg) translateX(50px);
     }
     40% {
 		opacity: 1;
-		transform: rotate(360deg) translateX(50px);
+		transform: rotate(270deg) translateX(50px);
     }
     80% {
 		opacity: 1;
-		transform: rotate(-360deg) translateX(50px);
+		transform: rotate(-450deg) translateX(50px);
     }
     100% {
 		opacity: 1;
-		transform: rotate(-360deg) translateX(50px);
+		transform: rotate(-450deg) translateX(50px);
     }
 }
