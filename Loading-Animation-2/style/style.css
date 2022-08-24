@@ -23,26 +23,18 @@
 }
 .animation-container #first {
   background-color: #96ceb4;
-  animation-name: orbit;
-  animation-duration: 4.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  z-index: 0;
+  animation: orbit 4.5s ease-in-out infinite, zindexAlterFirst 4.5s step-end infinite;
 }
 .animation-container #second {
   background-color: #ff6f69;
-  animation-name: orbit;
-  animation-duration: 4.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.15s;
+  z-index: 5;
+  animation: orbit 4.5s ease-in-out infinite 0.15s;
 }
 .animation-container #third {
   background-color: #4497e3;
-  animation-name: orbit;
-  animation-duration: 4.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.3s;
+  z-index: 10;
+  animation: orbit 4.5s ease-in-out infinite 0.3s, zindexAlterLast 4.5s step-end infinite;
 }
 
 @keyframes orbit {
@@ -65,6 +57,28 @@
   100% {
     opacity: 1;
     transform: rotate(-450deg) translateX(50px);
+  }
+}
+@keyframes zindexAlterFirst {
+  0% {
+    z-index: 0;
+  }
+  15% {
+    z-index: 10;
+  }
+  60% {
+    z-index: 0;
+  }
+}
+@keyframes zindexAlterLast {
+  0% {
+    z-index: 10;
+  }
+  15% {
+    z-index: 0;
+  }
+  60% {
+    z-index: 10;
   }
 }
 
